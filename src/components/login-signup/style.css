@@ -1,0 +1,31 @@
+.backdrop {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  position: absolute;
+  top: 3rem;
+}
+
+.bb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.bb > a {
+  /* width: 8.25rem; */
+  font-size: 16px;
+  height: 2.8rem;
+  /* width: 13.2rem; */
+  cursor: pointer;
+}
+
+.small .css-e53awj-MuiStack-root {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.small .css-e53awj-MuiStack-root > :not(style) + :not(style) {
+  margin-left: 0px;
+}

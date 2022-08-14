@@ -1,0 +1,54 @@
+.btn {
+  color: rgb(105, 105, 105);
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+  /* text-align: right;
+  margin: 0px auto; */
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 110rem;*/
+  margin: 0px auto;
+  /* position: relative; */
+  align-items: center;
+}
+
+.largeScreen {
+  display: block;
+  margin-right: 2rem;
+}
+
+.mobile {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .header .largeScreen {
+    visibility: hidden;
+  }
+  .header .mobile {
+    /* position: absolute;
+    left: 0;
+    top: 3rem;
+    color: white;
+    padding: 0px 1.5rem;
+    cursor: pointer; */
+    visibility: visible;
+    padding: 0px 1.5rem;
+  }
+}
+
+/* .mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+} */

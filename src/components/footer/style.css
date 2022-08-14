@@ -1,0 +1,109 @@
+.footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid rgb(0 0 0 / 35%);
+    padding: 4.8rem 2.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        padding: 1rem 2.2rem;
+    }
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo > img {
+        width: 20%;
+    }
+}
+
+.dropdownContainer {
+    display: flex;
+}
+
+@media screen and (max-width: 767px) {
+    .dropdownContainer {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+}
+
+.dropdownContainer .css-1t838gv-MuiFormControl-root {
+    margin-left: 0px;
+}
+
+.InfoContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    justify-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .InfoContainer {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: unset;
+    }
+}
+@media screen and (max-width: 320px) {
+    .InfoContainer {
+        font-size: 13px;
+    }
+}
+
+.formClass {
+    font-size: 16px;
+}
+
+.formClass > div {
+    border: 1px solid grey;
+}
+
+.formClass > div > fieldset {
+    border-style: hidden;
+}
+
+.InfoContainer .heading {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    margin: 0px 0px 1.2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .InfoContainer .heading {
+        font-size: 1rem;
+    }
+}
+
+.InfoContainer .subheading {
+    font-size: 1rem;
+    line-height: 2.1rem;
+    color: rgb(105, 105, 105);
+    margin: 0.5rem 0px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .InfoContainer .subheading {
+        font-size: 0.8rem;
+    }
+}
