@@ -1,0 +1,101 @@
+.topBannerContainer {
+    position: relative;
+    min-height: 28rem;
+    max-height: 50rem;
+    overflow: hidden;
+}
+
+.topBannerContainer > img {
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .logoContainer {
+        bottom: 2rem;
+    }
+}
+
+.logoContainer > img {
+    width: 20%;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .logoContainer > img {
+        width: 50%;
+        position: relative;
+    }
+}
+
+.logoContainer .heading {
+    margin: 1rem 0;
+    line-height: 1;
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 500;
+    z-index: 2;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .logoContainer .heading {
+        margin: 2rem 0 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    max-width: 108rem;
+    margin: 1.5rem auto;
+}
+
+@media screen and (max-width: 767px) {
+    .imageContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.cardRoot {
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 0 0.2em rgb(0 0 0 / 30%);
+    border-radius: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    width: 70%;
+    max-height: 368px;
+    min-height: 184px;
+}
+
+.cardRoot > img {
+    border-radius: 16px 16px 0 0;
+}
+
+.cardRoot:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    box-shadow: -1px 2px 1em 3px rgb(0 0 0 / 30%);
+}
+
+.imageTitles {
+    margin-top: 1rem;
+    font-weight: normal;
+}

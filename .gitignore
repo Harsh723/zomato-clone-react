@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# linting and prettier
+.eslintignore
+/.eslintrc.js
+.prettierrc.js

@@ -1,0 +1,61 @@
+/* .search > div > div > div > fieldset {
+  border-style: hidden;
+}
+
+.search {
+  margin: auto;
+  width: 40%;
+  margin-top: 3rem;
+}
+
+.search > div,
+.search > div > div {
+  width: 100%;
+}
+
+.search > div > div > div > input {
+  font-size: 1.8rem;
+  padding: 4px;
+} */
+
+.dropdown {
+    margin-top: 5px;
+}
+
+.search {
+    position: relative;
+    margin: auto;
+    width: 25%;
+    margin-top: 1rem;
+    z-index: 1;
+}
+
+.search > div > div > div > fieldset {
+    border-style: hidden;
+}
+
+.search > div {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.search > div > div > div > input {
+    font-size: 1.8rem;
+    padding: 4px;
+}
+
+.search > div > div > div {
+    padding-left: 11% !important;
+}
+
+@media screen and (max-width: 480px) {
+    .search {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 820px) and (min-width: 481px) {
+    .search {
+        width: 40%;
+    }
+}
