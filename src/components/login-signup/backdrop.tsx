@@ -17,7 +17,7 @@ export default function SimpleBackdrop() {
 
     return (
         <div className="parent">
-            <MenuIcon fontSize="large" style={{ color: "white", cursor: "pointer" }} onClick={handleToggle} />
+            <MenuIcon fontSize="large" style={{ color: "white", cursor: "pointer", fontSize: "2rem" }} onClick={handleToggle} />
             <Backdrop
                 sx={{
                     color: "black",
