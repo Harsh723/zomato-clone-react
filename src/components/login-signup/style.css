@@ -25,21 +25,17 @@
     align-items: flex-start;
 }
 
-.small .css-e53awj-MuiStack-root > :not(style) + :not(style) {
-    margin-left: 0px;
-}
-
 .lg {
     display: flex;
     gap: 1rem;
 }
 
-.lg,
-.small > .css-10d1a0h-MuiButtonBase-root {
+.lg > button,
+.small > button {
     cursor: unset;
 }
 
-.small > .css-10d1a0h-MuiButtonBase-root > p {
+.small > button > p {
     color: rgb(105, 105, 105) !important;
     font-size: 1.5rem !important;
 }
