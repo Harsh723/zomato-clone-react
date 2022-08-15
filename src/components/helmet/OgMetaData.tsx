@@ -9,15 +9,13 @@ interface IOgMetaData {
 function OgMetaData(props: IOgMetaData) {
     const { title, description } = props;
     return (
-        <div className="application">
-            <Helmet>
-                <title>{title}</title>
-                <meta property="og:title" content={title} />
-                <meta name="description" content={description} />
-                <meta property="og:description" content={description} />
-                <meta property="og:image" content="/zomato.png" />
-            </Helmet>
-        </div>
+        <Helmet>
+            <title>{title}</title>
+            <meta property="og:title" content={title} />
+            <meta name="description" content={description} />
+            <meta property="og:description" content={description} />
+            <meta property="og:image" content="/zomato.png" />
+        </Helmet>
     );
 }
 
