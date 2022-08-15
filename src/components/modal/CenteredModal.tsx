@@ -1,11 +1,8 @@
 import React from "react";
-import { Modal } from "react-bootstrap";
+import Modal from "react-bootstrap/Modal";
 import Button from "@mui/material/Button";
 import Login from "module/login-modal/login";
 import Signup from "module/login-modal/signup";
-
-//const Login = React.lazy(() => import("module/login-modal/login"));
-//const Signup = React.lazy(() => import("module/login-modal/signup"));
 
 type FooterModal = {
     login: boolean;
@@ -26,6 +23,7 @@ function CenteredModal({ show, onHide, showModal, toggle }: ICenteredModal) {
             show={show}
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
+            centered
             style={{ fontSize: "1.6rem" }}
         >
             <Modal.Header closeButton>

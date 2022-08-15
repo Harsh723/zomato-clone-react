@@ -1,5 +1,4 @@
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
+import ButtonBase from "@mui/material/ButtonBase";
 import React, { useState, Suspense } from "react";
 
 const CenteredModal = React.lazy(() => import("components/modal/CenteredModal"));
@@ -37,15 +36,13 @@ const CommonLogin = ({ display, onClick }: CommonLoginType) => {
 
     return (
         <>
-            <div className={display ? "small" : ""}>
-                <Stack spacing={2} direction="row">
-                    <Button variant="text" color="secondary" onClick={() => handleLoginSignup("Login")}>
-                        <p style={{ fontSize: "2rem" }}>Log in</p>
-                    </Button>
-                    <Button variant="text" color="secondary" onClick={() => handleLoginSignup("Signup")}>
-                        <p style={{ fontSize: "2rem" }}>Sign up</p>
-                    </Button>
-                </Stack>
+            <div className={display ? "small" : "lg"}>
+                <ButtonBase onClick={() => handleLoginSignup("Login")}>
+                    <p style={{ fontSize: "1rem", color: "white", cursor: "pointer" }}>Log in</p>
+                </ButtonBase>
+                <ButtonBase onClick={() => handleLoginSignup("Signup")}>
+                    <p style={{ fontSize: "1rem", color: "white", cursor: "pointer" }}>Sign up</p>
+                </ButtonBase>
             </div>
             {(modalShow.login || modalShow.signUp) && (
                 <Suspense fallback={<div>Loading...</div>}>

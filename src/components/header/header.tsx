@@ -6,13 +6,15 @@ import CommonLogin from "components/login-signup/CommonLogin";
 
 function Header() {
     return (
-        <header className="header">
-            <div className="mobile">
-                <SimpleBackdrop />
-            </div>
-            <div className="largeScreen">
-                <CommonLogin display={false} onClick={() => {}} />
-            </div>
+        <header>
+            <nav style={{ padding: "2rem" }}>
+                <div className="mobile">
+                    <SimpleBackdrop />
+                </div>
+                <div className="largeScreen">
+                    <CommonLogin display={false} onClick={() => {}} />
+                </div>
+            </nav>
         </header>
     );
 }
