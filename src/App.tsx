@@ -21,7 +21,7 @@ function App() {
 function Hello() {
     return (
         <div>
-            <OgMetaData title="Zomato-Clone" description="A one go place to order food online" />
+            <OgMetaData title="Zomato-Clone" description="A place to order food online" />
             <Outlet />
             <Footer />
         </div>
