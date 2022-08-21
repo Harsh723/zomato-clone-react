@@ -32,6 +32,12 @@
     position: relative;
 }
 
+@media screen and (max-width: 281px) {
+    .logoContainer > img {
+        width: 15rem;
+    }
+}
+
 .logoContainer .heading {
     margin: 1rem 0;
     line-height: 1;

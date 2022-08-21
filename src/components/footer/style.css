@@ -12,6 +12,12 @@
     }
 }
 
+@media screen and (max-width: 281px) {
+    .footer {
+        padding: 1rem 1rem;
+    }
+}
+
 .logo {
     width: 100%;
     display: flex;
@@ -32,6 +38,12 @@
 @media screen and (max-width: 767px) {
     .logo > img {
         width: 20%;
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .logo > img {
+        width: 30%;
     }
 }
 
@@ -63,9 +75,16 @@
         justify-items: unset;
     }
 }
+
 @media screen and (max-width: 320px) {
     .InfoContainer {
         font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .InfoContainer {
+        gap: 13px;
     }
 }
 

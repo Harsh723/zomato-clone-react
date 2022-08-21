@@ -40,12 +40,7 @@ function Login() {
                 value={mobileNumber}
                 onChange={handleChange}
             />
-            <Button
-                variant="contained"
-                disabled={mobileNumber.length < 10}
-                color="primary"
-                style={{ marginTop: "20px", fontSize: "1.5rem" }}
-            >
+            <Button variant="contained" disabled={mobileNumber.length < 10} color="primary" style={{ marginTop: "20px" }}>
                 Send OTP
             </Button>
             <Button
@@ -53,10 +48,8 @@ function Login() {
                 startIcon={<Email color="primary" />}
                 style={{
                     backgroundColor: "white",
-                    padding: "1rem 0",
                     color: "black",
-                    marginTop: "20px",
-                    fontSize: "1.5rem"
+                    marginTop: "20px"
                 }}
             >
                 Continue with Email
@@ -71,13 +64,11 @@ export const GoogleButton = () => (
         variant="contained"
         style={{
             backgroundColor: "white",
-            padding: "1rem 0",
             color: "black",
-            marginTop: "20px",
-            fontSize: "1.5rem"
+            marginTop: "20px"
         }}
     >
-        <img src={GoogleLogo} data-src={GoogleLogo} height="100%" alt="Google" width="3%" loading="eager" />
+        <img src={GoogleLogo} data-src={GoogleLogo} height="100%" alt="Google" width="6%" loading="eager" />
         <span style={{ padding: "0 0.5rem" }}> Continue with Google</span>
     </Button>
 );
