@@ -1,24 +1,14 @@
 .container,
 .signup {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
 }
 
 .container > div {
-  border: 1px solid grey;
+    border: 1px solid grey;
 }
 
 .container > div > div > fieldset {
-  border-style: hidden;
-}
-
-.container > div > div {
-  font-size: 1.6rem;
-}
-
-.signup > div > label,
-.signup > div > div > input,
-.signup > label > span:nth-child(2) {
-  font-size: 1.5rem !important;
+    border-style: hidden;
 }

@@ -48,13 +48,13 @@ function Signup() {
             <FormControlLabel
                 control={<Checkbox checked={check} onChange={handleCheckBox} color="primary" />}
                 label="I  agree to Zomato's Terms of Service, Privacy Policy and Content Policies"
-                style={{ margin: "20px 0 0", fontSize: "1.5rem" }}
+                style={{ margin: "20px 0 0" }}
             />
             <Button
                 variant="contained"
                 disabled={name.length < 2 || !isEmailValid || !check}
                 color="primary"
-                style={{ marginTop: "20px", fontSize: "1.5rem" }}
+                style={{ marginTop: "20px" }}
             >
                 Create Account
             </Button>
