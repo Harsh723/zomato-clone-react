@@ -9,6 +9,7 @@ import { LocationSuggestion } from "module/interface/location-interface";
 import { Autocomplete, InputAdornment, TextField } from "@mui/material";
 import { LocationOn } from "@mui/icons-material";
 import { createSearchParams, useNavigate } from "react-router-dom";
+import { IHeaderProps } from "components/wrapper/AppWrapper";
 
 export type IAutoCompleteValue = {
     cityName: string;
@@ -18,7 +19,7 @@ export type IAutoCompleteValue = {
     locationId: number;
 };
 
-function SearchBar() {
+function SearchBar({ showLogo }: IHeaderProps) {
     const [output, setOutput] = useState<LocationSuggestion[]>([]);
     const [autoCompleteValue, setAutoCompleteValue] = useState("");
     const [autoCompleteInputValue, setAutoCompleteInputValue] = useState("");
@@ -40,7 +41,7 @@ function SearchBar() {
 
     async function handleChange(inputValue: string) {
         const data = await getLocationSuggestions(inputValue);
-        console.log("api", output);
+
         if (data.length) {
             setOutput(data);
         } else {
@@ -54,7 +55,6 @@ function SearchBar() {
 
     const handleAutoCompleteValueChange = (event: ChangeEvent<any>, value: string) => {
         setAutoCompleteValue(value);
-        console.log("filter", output.filter((el) => el.title === value)[0]);
 
         const filteredLocationData = output.filter((el) => el.title === value)[0];
 
@@ -92,7 +92,7 @@ function SearchBar() {
     };
 
     return (
-        <div className="search">
+        <div className="search" style={{ marginTop: showLogo ? "unset" : "1rem", width: showLogo ? "35%" : "25%" }}>
             <Autocomplete
                 renderInput={(params) => (
                     <TextField

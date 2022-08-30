@@ -33,7 +33,7 @@ export default function SimpleBackdrop() {
                             <img src={footerImage} data-src={footerImage} height="100%" alt="Zomato Footer" width="75%" />
                         </a>
                     </div>
-                    <CommonLogin display onClick={handleToggle} />
+                    <CommonLogin display onClick={handleToggle} showLogo={false} />
                 </div>
             </Backdrop>
         </div>
