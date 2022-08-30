@@ -21,3 +21,9 @@
         left: 0.5rem;
     }
 }
+
+.navHeader {
+    display: flex;
+    background-color: #f8f8f8;
+    align-items: center;
+}

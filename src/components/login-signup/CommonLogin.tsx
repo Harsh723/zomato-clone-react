@@ -11,9 +11,10 @@ type LoginSignUp = {
 type CommonLoginType = {
     display: boolean;
     onClick: () => void;
+    showLogo?: boolean;
 };
 
-const CommonLogin = ({ display, onClick }: CommonLoginType) => {
+const CommonLogin = ({ display, onClick, showLogo }: CommonLoginType) => {
     const [modalShow, setModalShow] = useState<LoginSignUp>({} as LoginSignUp);
 
     const handleLoginSignup = (value: string) => {
@@ -38,10 +39,10 @@ const CommonLogin = ({ display, onClick }: CommonLoginType) => {
         <>
             <div className={display ? "small" : "lg"}>
                 <ButtonBase onClick={() => handleLoginSignup("Login")}>
-                    <p style={{ fontSize: "1rem", color: "white", cursor: "pointer" }}>Log in</p>
+                    <p style={{ fontSize: "1rem", color: showLogo ? "black" : "white", cursor: "pointer" }}>Log in</p>
                 </ButtonBase>
                 <ButtonBase onClick={() => handleLoginSignup("Signup")}>
-                    <p style={{ fontSize: "1rem", color: "white", cursor: "pointer" }}>Sign up</p>
+                    <p style={{ fontSize: "1rem", color: showLogo ? "black" : "white", cursor: "pointer" }}>Sign up</p>
                 </ButtonBase>
             </div>
             {(modalShow.login || modalShow.signUp) && (
